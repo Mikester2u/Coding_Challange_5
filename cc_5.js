@@ -13,13 +13,13 @@ class Employee { //Employee class with constructor console logging the name and 
     }
 }
 
-class Manager extends Employee {
+class Manager extends Employee { //class Manager extending class Employee
     constructor (name, salary, department) {
         super(name, salary);
         this.department = department;
     }
 
-   annualSalary() {
+   annualSalary() { //calculating annual salary and displaying log
     const baseAnnualSalary = super.annualSalary();
     const bonus = baseAnnualSalary * 0.15;
     const totalAnnualSalary = baseAnnualSalary + bonus;
@@ -30,7 +30,7 @@ class Manager extends Employee {
    } 
 }
 
-
+// Instantiate Manager Objects 
 const manager1 = new Manager("Bob Ross", 6600.00, "Digital Marketing");
 const manager2 = new Manager("Debbie Little", 7205.00, "Finance");
 
