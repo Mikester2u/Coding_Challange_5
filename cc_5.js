@@ -24,8 +24,15 @@ class Manager extends Employee {
     const bonus = baseAnnualSalary * 0.15;
     const totalAnnualSalary = baseAnnualSalary + bonus;
 
-    console.log("Bonus for " + name + ", " + bonus );
-    console.log("Total Annual Salary for " + name + "including bonus, " + totalAnnualSalary);
+    console.log("Bonus for " + this.name + ", " + bonus );
+    console.log("Total Annual Salary for " + this.name + " including bonus, " + totalAnnualSalary);
     return totalAnnualSalary;
    } 
 }
+
+
+const manager1 = new Manager("Bob Ross", 6600.00, "Digital Marketing");
+const manager2 = new Manager("Debbie Little", 7205.00, "Finance");
+
+manager1.annualSalary();
+manager2.annualSalary();
